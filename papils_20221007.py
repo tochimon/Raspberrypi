@@ -13,7 +13,7 @@ list_seki = []
 #窓の大きさ指定
 num = 50
 #データ取得の幅
-dt = 0.01
+dt = 0.1
 
 #積分用
 for i in range(num):
