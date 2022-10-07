@@ -2,7 +2,7 @@
 
 import smbus
 import csv
-import  time
+import time
 import numpy as np
 import camera
 

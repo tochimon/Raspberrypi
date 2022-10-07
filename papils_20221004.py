@@ -27,11 +27,11 @@ def sekibun(data):
     return sum
 
 
-
 def csvinput(filename,data):
     f = open(filename, 'a')
     f.write(str(data) + "\n")
     f.close()
+
 
 def timer(before_time):
     now_time = time.time()
@@ -45,8 +45,10 @@ def timer(before_time):
         list_raw.insert(0, data)
         list_raw.pop(num)
         list_seki.insert(0,sekibun(list_raw))
-        csvinput(filename_data,str(np.sum(list_seki)))
+        csvdata = [data,np.sum(list_seki)]
+        csvinput(filename_data,csvdata)
     return before_time
+
 
 def papils():
         #コマンドフォーマット　アドレス　読み込みたいデータのアドレス　データ数
