@@ -30,7 +30,7 @@ dx_dt = csv_input
 #積分後用変数
 list_seki = []
 dt = 1
-xt = 0.
+#xt = 0.
 sum_seki = 0
 
 #平均値用変数
@@ -38,7 +38,7 @@ ave = 0
 
 #窓用配列
 list_raw = []
-num=500 #窓の大きさ指定
+num=1000 #窓の大きさ指定
 for i in range(num):
     list_raw.insert(0,0)
     list_seki.insert(0,0)
@@ -47,7 +47,7 @@ for i in range(num):
 now = datetime.datetime.now()
 #filename = str(now.strftime("%Y%m%d%H%M%S" + ".csv"))
 
-filename = "./data/outputdata_3.csv"
+filename = "./data/outputdata_3-2.csv"
 print(filename)
 
 for dxt_dt in range(len(dx_dt)-1):
